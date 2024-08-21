@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex card</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+        }
+        body{
+            background-image: linear-gradient(to right, #00ffcc, #4098ad, #7070f8);
+        }
+        .container {
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+        }
+        .card {
+  background: white;
+  width: 280px;
+  height: 420px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+.card-image {
+  background-color: rgb(74, 227, 97);
+  height: 170px;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.img-1{
+    background-image: url("./images/portrait-woman-working-laptop.jpg");
+}
+.img-2{
+    background-image: url("./images/top-view-tomato-branch-chopping-board-mushroom-broccoli-beans-bowls-bell-pepper-bowls-with-spices-table.jpg");
+}
+.img-3{
+    background-image: url("./images/luxury-car-interior-steering-wheel-shift-lever-dashboard-computer.jpg");
+}
+.btn-hover {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 25px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  margin-left: 10px;
+  
+}
+.btn-hover:hover {
+  background-position: 100% 0;
+}
+.btn-hover:focus {
+  outline: none;
+}
+.btn-hover.color-1 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #7661ff,
+    #30dd8a,
+    #d736af
+  );
+  box-shadow: 0 4px 15px 0 rgba(59, 232, 244, 0.75);
+  
+}
+h3 {
+  font-family: system-ui;
+  margin-left: 10px;
+  /* margin-top: 24px; */
+}
+.end {
+  display: flex;
+  padding-top: 10px;
+}
+.img-5 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: flex;
+}
+
+h4 {
+  font-family: system-ui;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.p-end1{
+  margin-top: 40px;
+  margin-left: -69px;
+  color: rgb(183, 183, 176);
+  padding-left: 15px;
+}
+.p-end {
+  margin-top: 40px;
+  margin-left: -69px;
+  color: rgb(183, 183, 176);
+}
+/* card 2 */
+.btn-hover.color-2 {
+  background-image: linear-gradient(
+    to right,
+    #dab97c,
+    #de9611,
+    #d8af1b,
+    #d49e08
+  );
+  box-shadow: 0 4px 15px 0 rgba(162, 147, 48, 0.744);
+}
+h1{
+  color: #000000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 5px;
+  display: inline;
+  text-shadow: 2px 2px #6d6d6d;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+  
+}
+/* card 3 */
+.btn-hover.color-3 {
+  background-image: linear-gradient(
+    to right,
+    #e53007,
+    #ee0e0e,
+    #dd1515,
+    #cb5d5d
+  );
+  
+  box-shadow: 0 4px 15px 0 rgba(165, 47, 47, 0.75);
+}
+
+.lorem{
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a{
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+<H1> Priyajit Debnath</H1>
+        <button class="btn-hover color-1"><a href="https://www.facebook.com/iampd10official" target="_blank">facebook</a></button>
+        <button class="btn-hover color-1"><a href="https://www.instagram.com/iampd10/" target="_blank">Instagram</a></button>
+        <button class="btn-hover color-1"><a href="http://www.google.com" target="_blank">Google</a></button>
+        <button class="btn-hover color-1"><a href="task_03.html" target="_blank">Database</a></button>
+    </header>
+    <!-- this is the main container -->
+    <section class="container">
+        <!-- card 1 -->
+         <div class="card">
+            <div class="card-image img-1"></div>
+            <div class="buttons">
+                <button class="btn-hover color-1"><a href="https://www.simplilearn.com/top-technology-trends-and-jobs-article" target="_blank">Technology</a></button>
+            </div>
+            <h3>What's New in 2024 Tech</h3>
+            <p class="lorem"> Features AI advancements, quantum computing, edge and cloud computing, 5G connectivity, IoT integration, and automation.</p>
+         <div class="end">
+            <img class="img-5" src="./images/download.jpeg" alt="Profile Picture">
+            <h4>Priyajit Debnath</h4>
+            <p class="p-end1">2h ago</p>
+         </div>
+         </div>
+          <!-- card 2 -->
+          <div class="card">
+            <div class="card-image img-2"></div>
+            <div class="buttons">
+                <button class="btn-hover color-3"><a href="https://www.cozymeal.com/magazine/indian-food" target="_blank">food</a></button>
+            </div>
+            <h3>Delicious Food</h3>
+            <p class="lorem">Delicious food is a symphony of flavors, textures, and aromas, creating a satisfying and memorable culinary experience..</p>
+         <div class="end">
+            <img class="img-5" src="./images/download (1).jpeg" alt="Profile Picture">
+            <h4>Devid Debnath</h4>
+            <p class="p-end">1h ago</p>
+         </div>
+         </div>
+          <!-- card 3 -->
+          <div class="card">
+            <div class="card-image img-3"></div>
+            <div class="buttons">
+                <button class="btn-hover color-2"><a href="https://www.cars24.com/blog/latest-car-technology-innovations/" target="_blank">Automobile</a></button>
+            </div>
+            <h3>Race to your Heart content</h3>
+            <p class="lorem">Race to your heart's content, embracing speed and thrill, driven by passion and the pursuit of victory.</p>
+         <div class="end">
+            <img class="img-5" src="./images/Premium Vector _ Young man Face Avater Vector illustration design.jpeg" alt="Profile Picture">
+            <h4>Dibyendu Majumder</h4>
+            <p class="p-end">2h ago</p>
+         </div>
+         </div>
+    </section>
+</body>
+</html>
